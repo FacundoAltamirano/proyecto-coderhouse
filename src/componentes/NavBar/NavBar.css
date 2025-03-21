@@ -1,0 +1,12 @@
+.nav a {
+
+    transition: all 0.3s ease-in-out;
+    border-bottom: 2px solid transparent;
+    border-top: 2px solid transparent;
+  }
+  
+.nav-hover:hover {
+    border-bottom: 2px solid #ff5900;
+    border-top: 2px solid #ff5900;
+}
+
