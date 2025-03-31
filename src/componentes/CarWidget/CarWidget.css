@@ -1,15 +1,15 @@
 div {
     font-size: 1.2rem;
+}
+.d-flex{
     border-radius: 20px;
 }
-
-div img {
+.carrito img {
     width: 60px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
 
-div img:hover {
+.carrito img:hover {
     width: 68px;
-
 }

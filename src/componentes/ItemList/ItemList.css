@@ -1,0 +1,16 @@
+.contenedorProductos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.445);
+    animation: oscurecer 1.5s ease-in-out forwards;
+}
+@keyframes oscurecer {
+    0% {
+      background-color: rgba(0, 0, 0, 0);
+    }
+    100% {
+      background-color: rgba(0, 0, 0, 0.445);
+    }
+  }
+  
