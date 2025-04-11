@@ -1,52 +1,54 @@
 .cardProducto {
-    width: 200px;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 8px 6px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    opacity: 0; 
-    animation: aparecer 1s ease-out forwards; 
-    animation-delay: 0.3s; 
-  }
-  
-  .cardProducto img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    transition: all 0.5s ease-in-out;
-    border: 2px solid #00000000;
-  }
-  
-  .cardProducto h3 {
-    font-size: 1.2rem;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .cardProducto p {
-    font-size: 1rem;
-    color: #000000;
-    margin: 5px 0;
-  }
-  
-  .cardProducto button {
-    padding: 10px 15px;
-    background-color: #ff5900;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  .cardProducto img:hover {
-    border: 2px solid #ff5900;
+  width: 200px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 6px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  opacity: 0;
+  animation: aparecer 1s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+.cardProducto img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  transition: all 0.5s ease-in-out;
+  border: 2px solid #00000000;
+}
+
+.cardProducto h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.cardProducto p {
+  font-size: 1rem;
+  color: #000000;
+  margin: 5px 0;
+}
+
+.cardProducto button {
+  padding: 10px 15px;
+  background-color: #ff5900;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cardProducto img:hover {
+  border: 2px solid #ff5900;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
   }
 
-  @keyframes aparecer {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+  100% {
+    opacity: 1;
   }
+}

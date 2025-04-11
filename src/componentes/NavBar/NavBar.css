@@ -1,6 +1,7 @@
-.container-fluid{
+.container-fluid {
   border-radius: 20px;
 }
+
 .nav a {
 
   transition: all 0.3s ease-in-out;
@@ -11,4 +12,8 @@
 .nav-hover:hover {
   border-bottom: 2px solid #ff5900;
   border-top: 2px solid #ff5900;
+}
+
+.m-0 {
+  color: black;
 }
