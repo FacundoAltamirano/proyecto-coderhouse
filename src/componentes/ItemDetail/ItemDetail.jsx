@@ -1,17 +1,27 @@
-import React, { useState } from 'react';
-import Lupa from '../Lupa/Lupa';
-import './ItemDetail.css';
-import ItemCount from '../ItemCount/ItemCount';
-import { Link } from 'react-router-dom';
+import React, { useState } from "react";
+import Lupa from "../Lupa/Lupa";
+import "./ItemDetail.css";
+import ItemCount from "../ItemCount/ItemCount";
+import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
+import { CarritoContext } from"../../context/CarritoContext"
+import { useContext } from "react";
+
+
 
 const ItemDetail = ({ id, nombre, precio, img, stock }) => {
+  const [agregarCantidad, setAgregarCantidad] = useState(0);
 
-  const [agregarCantidad, setAgregarCantidad] = useState(0)
+  const {agregarAlCarrito} = useContext(CarritoContext)
 
   const manejadorCantidad = (cantidad) => {
-    setAgregarCantidad(cantidad)
-    console.log('Producto agregado' + cantidad)
-  }
+    setAgregarCantidad(cantidad);
+    console.log("Producto agregado " + cantidad);
+
+    const item = { id, nombre, precio };
+    agregarAlCarrito(item, cantidad);
+  
+  };
   return (
     <div className="card-producto">
       <div className="contenido-card">
@@ -23,12 +33,20 @@ const ItemDetail = ({ id, nombre, precio, img, stock }) => {
           <p>Precio: ${precio}</p>
           <p>ID: {id}</p>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis fuga saepe porro a perspiciatis ipsa recusandae facere libero repudiandae unde deleniti, iure nulla. Pariatur voluptates aperiam dolore error officia possimus?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis
+            fuga saepe porro a perspiciatis ipsa recusandae facere libero
+            repudiandae unde deleniti, iure nulla. Pariatur voluptates aperiam
+            dolore error officia possimus?
           </p>
-          {
-            agregarCantidad > 0 ? (<Link to='/cart'> Terminar Compra</Link>) : (<ItemCount inicial={1} stock={stock}
-              funcionAgregar={manejadorCantidad} />)
-          }
+          {agregarCantidad > 0 ? (
+            <Link to="/cart"> Terminar Compra</Link>
+          ) : (
+            <ItemCount
+              inicial={1}
+              stock={stock}
+              funcionAgregar={manejadorCantidad}
+            />
+          )}
         </div>
       </div>
     </div>

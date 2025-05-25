@@ -6,7 +6,7 @@ import { Link, NavLink } from 'react-router-dom';
 const NavBar = () => {
   const logo = "https://static.vecteezy.com/system/resources/previews/045/593/130/non_2x/esport-ape-logo-free-png.png";
   return (
-    <nav className="navbar navbar-light bg-light p-3">
+    <nav className="navbar navbar-dark bg-dark p-3">
       <div className="container-fluid d-flex justify-content-between align-items-center">
 
         <Link to="/" className="text-dark text-decoration-none">
@@ -22,9 +22,14 @@ const NavBar = () => {
         </Link>
 
 
+      
+
 
         <div className="d-flex align-items-center">
           <ul className="nav">
+            <li>
+            <NavLink to="/admin"className="nav-link text-dark nav-hover">Admin</NavLink>
+            </li>
 
             <li className="nav-item">
               <NavLink to="/" className="nav-link text-dark nav-hover">Inicio</NavLink>

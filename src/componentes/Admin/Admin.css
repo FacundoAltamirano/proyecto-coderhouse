@@ -1,0 +1,86 @@
+.admin-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.admin-upload-button {
+  background-color: #ff5900;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 15px 0;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.admin-upload-button:hover {
+  background-color: #e04f00;
+}
+
+.admin-product-list h3 {
+  margin-bottom: 20px;
+}
+
+.admin-ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+.admin-product-card {
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.admin-product-card:hover {
+  transform: translateY(-5px);
+}
+
+.admin-product-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.admin-product-card h5 {
+  font-size: 1.1rem;
+  margin: 8px 0 4px;
+  text-align: center;
+}
+
+.admin-product-card h6 {
+  margin: 2px 0;
+  font-weight: normal;
+  color: #555;
+  text-align: center;
+}
+
+.admin-delete-button {
+  background-color: #5e5e5e;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 4px;
+  margin-top: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.admin-delete-button:hover {
+  background-color: #cc0000;
+}

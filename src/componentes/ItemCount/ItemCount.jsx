@@ -15,7 +15,7 @@ const ItemCount = ({ stock, inicial, funcionAgregar }) => {
       setContador(contador - 1)
     }
   }
-  console.log(contador)
+  
   return (
     <div className="contador">
       <h1>Contador</h1>

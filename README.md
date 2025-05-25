@@ -1,12 +1,15 @@
-# React + Vite
+#Tienda de ropa
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una tienda online de ropa desarrollada como practica de e-commerce
 
-Currently, two official plugins are available:
+Funcionalidades Principales:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Vista de productos: Los usuarios pueden navegar por un catálogo de ropa. Cada producto muestra una imagen, nombre, precio y detalles. Al pasar el mouse por la imagen, aparece una lupa para ampliar la vista.
 
-## Expanding the ESLint configuration
+Carrito de compras: Se pueden agregar productos al carrito. Desde ahí se puede aumentar o disminuir la cantidad de cada producto o eliminarlos por completo. El carrito se actualiza en tiempo real.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Base de datos con Firebase: Todos los productos están conectados a una base de datos en Firebase. Esto permite que los datos estén sincronizados y se mantengan actualizados sin necesidad de recargar la página.
+
+Panel de administración (Admin): En el navbar hay un botón llamado "Admin". Desde ahí se pueden agregar nuevos productos o eliminar los que ya existen en la base de datos. Esta funcionalidad es útil para simular el manejo de inventario desde el lado del administrador.
+
+Carga rápida de productos: También se incluye un botón que permite agregar automáticamente un conjunto de productos predeterminados a la base de datos. Esto es útil para pruebas o para resetear el catálogo.
